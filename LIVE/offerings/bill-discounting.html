@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Discounting - Capital Growth Advisory</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .nav-container { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; }
+      .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+      .header-logo-icon { width: 60px; height: 60px; object-fit: contain; border-radius: 50%; }
+      .logo-text-group { display: flex; flex-direction: column; }
+      .logo-text { font-size: 1.4rem; font-weight: 700; color: #0f2c59; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.1; }
+      .logo-subtext { font-size: 0.75rem; color: #1a73e8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; margin-top: 3px; }
+      
+      /* Shared Product Hero Template */
+      .product-hero { background: linear-gradient(135deg, #0f2c59 0%, #1a73e8 100%); color: #ffffff; padding: 60px 20px; text-align: center; }
+      .product-hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+      .product-hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; opacity: 0.9; line-height: 1.6; }
+      
+      .product-body { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+      .details-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+      @media (max-width: 768px) { .details-grid { grid-template-columns: 1fr; } }
+      
+      /* Checklist layout for features */
+      .features-list { list-style: none; padding: 0; margin-top: 20px; }
+      .features-list li { margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.1rem; line-height: 1.5; }
+      .features-list li::before { content: "✓"; position: absolute; left: 0; color: #1a73e8; font-weight: bold; font-size: 1.2rem; }
+
+      /* Visual Feature Cards Grid Layout */
+      .feature-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 25px;
+      }
+      .feature-card {
+        background: #f8fafc;
+        padding: 1.5rem;
+        border-radius: 6px;
+        border-left: 4px solid #1a73e8;
+        border-top: 1px solid #e2e8f0;
+        border-right: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <a href="../index.html" class="logo-wrap">
+          <img src="../images/cga1.jpg" alt="Capital Growth Advisory Logo" class="header-logo-icon" />
+          <div class="logo-text-group">
+            <span class="logo-text">Capital Growth Advisory</span>
+            <span class="logo-subtext">Your Financial Prosperity Is Our Priority</span>
+          </div>
+        </a>
+        <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li class="dropdown" id="offerings-dropdown">
+            <a href="#" class="dropdown-trigger">Loan Offerings ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="unsecured-business-loan.html">Unsecured Business Loan</a></li>
+              <li><a href="working-capital.html">Working Capital- OD /CC</a></li>
+              <li><a href="home-loan.html">Home Loan</a></li>
+              <li><a href="loan-against-property.html">Loan Against Property</a></li>
+              <li><a href="car-loan.html">Car loan</a></li>
+              <li><a href="personal-loan.html">Personal loan</a></li>
+              <li><a href="education-loan.html">Education loan</a></li>
+              <li><a href="bill-discounting.html">Bill discounting</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="product-hero">
+      <h1>📄 Strategic Bill Discounting</h1>
+      <p>Accelerate commercial cash flow instantly. Convert your outstanding corporate accounts receivables into immediate, liquid capital without waiting out long invoice collection cycles.</p>
+    </section>
+
+    <main class="product-body">
+      <div class="details-grid">
+        <div class="info-panel">
+          <h2>Product Overview</h2>
+          <p style="margin-bottom: 1.25rem; line-height: 1.6;">
+            At Capital Growth Advisory, we help businesses maintain optimal working capital cycles through comprehensive Bill Discounting and Invoice Factoring advisory. Waiting 30, 60, or 90 days for corporate clients to clear invoices can severely restrict operational growth. We bridge this gap by providing access to immediate funds, backed by your unpaid corporate invoices.
+          </p>
+          <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+            Our strategic associations with premier banks and leading NBFCs ensure your business achieves instant liquidity with minimal turnaround time. By eliminating unpaid trade receivables bottlenecks, Capital Growth Advisory helps you focus on taking new orders, fulfilling inventory, and expanding your marketplace operations smoothly.
+          </p>
+          
+          <h3 style="margin-top:35px; color: #0f2c59;">Our Bill Discounting Services Include:</h3>
+          <ul class="features-list">
+            <li><strong>Immediate Cash Flow Acceleration:</strong> Unlock up to 80-90% of your invoice value within days rather than waiting through long credit cycles.</li>
+            <li><strong>Competitive Discounting Rates:</strong> Access highly optimized, cost-efficient discounting options across a wide network of partner financial institutions.</li>
+            <li><strong>No Capital Balance Sheet Debt:</strong> Fund regular daily activities via actual earned revenue streams without incurring new traditional interest-bearing term liabilities.</li>
+            <li><strong>Streamlined Digital Onboarding:</strong> Minimal paperwork and quick verification pathways that prioritize fast credit approvals based on corporate buyer profiles.</li>
+            <li><strong>Tailored Working Capital Solutions:</strong> Flexible funding arrangements scaled perfectly to your specific industry requirements, sales volumes, and business cycle needs.</li>
+            <li><strong>Unsecured Financing Limits:</strong> Rely entirely on your strong commercial invoice parameters and enterprise clients without pledging additional physical property.</li>
+          </ul>
+
+          <h3 style="margin-top: 35px; color: #0f2c59;">Key Operational Benefits</h3>
+          <div class="feature-cards-grid">
+            <div class="feature-card">
+              <h4 style="color: #0f2c59; margin-bottom: 0.5rem;">Strengthen Vendor Trust</h4>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Keep supply chains moving cleanly to settle supplier dues early and confidently negotiate upfront bulk cash discounts.</p>
+            </div>
+            <div class="feature-card">
+              <h4 style="color: #0f2c59; margin-bottom: 0.5rem;">Enhanced Credit Metrics</h4>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Convert slow-moving liquid ledger accounts receivables directly into cash, significantly improving corporate liquidity ratios.</p>
+            </div>
+            <div class="feature-card">
+              <h4 style="color: #0f2c59; margin-bottom: 0.5rem;">Seamless Processing</h4>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Simple setup structures evaluating invoice validity and blue-chip buyer background histories for rapid clearances.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cta-sidebar" style="background:#f4f6f9; padding:30px; border-radius:8px; border: 1px solid #e2e8f0; height: fit-content;">
+          <h3 style="color: #0f2c59; margin-bottom: 10px;">Optimize Working Capital</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 20px; line-height: 1.5;">For more details and customized Bill Discounting solutions, please connect with Capital Growth Advisory. We are committed to helping you achieve your commercial financial goals with trusted guidance and seamless funding support.</p>
+          <a href="../index.html#contact" class="btn" style="display:block; text-align:center; text-decoration:none; background:#1a73e8; color:white; padding:12px; border-radius:4px; font-weight:600;">Apply Now</a>
+        </div>
+      </div>
+    </main>
+
+    <a href="https://wa.me/8655884973?text=Hi!%20I%20need%20some%20assistance%20regarding%20Bill%20Discounting." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+      <svg style="width: 32px; height: 32px; fill: currentColor" viewBox="0 0 24 24"><path d="M12.004 2c-5.51 0-9.99 4.49-9.99 10 0 1.77.47 3.49 1.35 5.02L2 22l5.13-1.34c1.47.8 3.12 1.22 4.83 1.22 5.52 0 10-4.49 10-10 0-5.51-4.48-10-10-10zm5.83 14.25c-.24.67-1.39 1.28-1.9 1.31-.51.03-1 .18-3.2-.73-2.64-1.09-4.34-3.79-4.47-3.97-.13-.18-1.07-1.42-1.07-2.71 0-1.29.67-1.92.91-2.18.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.37-.06.57.43.21.51.73 1.79.79 1.91.06.12.1.27.02.43-.08.16-.12.26-.25.41-.12.15-.26.33-.37.45-.12.13-.25.27-.11.51.14.24.63 1.03 1.35 1.67.93.82 1.71 1.08 1.95 1.19.24.11.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.07.12.07.69-.17 1.36z" /></svg>
+    </a>
+
+    <footer><p>© 2026 Capital Growth Advisory. All rights reserved.</p></footer>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

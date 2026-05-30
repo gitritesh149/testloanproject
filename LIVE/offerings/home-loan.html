@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Loans - Capital Growth Advisory</title>
+    <!-- Updated path to root CSS folder -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Layout alignment and restored scaling for the header brand area */
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px; /* Generous vertical padding to prevent squeezing */
+      }
+
+      .logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        text-decoration: none;
+      }
+      
+      .header-logo-icon {
+        width: 60px;  /* Restored to a prominent, larger height profile */
+        height: 60px; /* Restored to a prominent, larger height profile */
+        object-fit: contain;
+        border-radius: 50%; /* Ensures a perfectly smooth circular edge */
+      }
+
+      .logo-text-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-text {
+        font-size: 1.4rem; /* Slightly scaled up to balance the larger logo emblem */
+        font-weight: 700;
+        color: #0f2c59; /* Corporate deep blue tone */
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+      }
+
+      .logo-subtext {
+        font-size: 0.75rem; /* Proportionally optimized for readability */
+        color: #1a73e8; /* Vibrant brand blue color */
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        margin-top: 3px;
+      }
+
+      /* Consistent Product Page Styling Stack */
+      .product-hero {
+        background: linear-gradient(135deg, #0f2c59 0%, #1a73e8 100%);
+        color: #ffffff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .product-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .product-hero p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      .product-body {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .details-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+      }
+
+      @media (max-width: 768px) {
+        .details-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .feature-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 25px;
+      }
+
+      .feature-card {
+        background: #f8fafc;
+        padding: 1.75rem;
+        border-radius: 6px;
+        border-left: 4px solid #1a73e8;
+        border-top: 1px solid #e2e8f0;
+        border-right: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .features-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 25px;
+      }
+
+      .features-list li {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      .features-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #1a73e8;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <!-- Updated logo image link and home redirection to step back one folder level -->
+        <a href="../index.html" class="logo-wrap">
+          <img src="../images/cga1.jpg" alt="Capital Growth Advisory Logo" class="header-logo-icon" />
+          <div class="logo-text-group">
+            <span class="logo-text">Capital Growth Advisory</span>
+            <span class="logo-subtext">Your Financial Prosperity Is Our Priority</span>
+          </div>
+        </a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <!-- Main navigation URLs updated with standard relative routing -->
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li class="dropdown" id="offerings-dropdown">
+            <a href="#" class="dropdown-trigger">Loan Offerings ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="unsecured-business-loan.html">Unsecured Business Loan</a></li>
+              <li><a href="working-capital.html">Working Capital- OD /CC</a></li>
+              <li><a href="home-loan.html">Home Loan</a></li>
+              <li><a href="loan-against-property.html">Loan Against Property</a></li>
+              <li><a href="car-loan.html">Car loan</a></li>
+              <li><a href="personal-loan.html">Personal loan</a></li>
+              <li><a href="education-loan.html">Education loan</a></li>
+              <li><a href="bill-discounting.html">Bill discounting</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Elevated Full-Width Header Block -->
+    <section class="product-hero">
+      <h1>🏠 Home Loans</h1>
+      <p>Secure your ideal residential property through competitive, low-interest financing structures built around flexible multi-year repayment horizons.</p>
+    </section>
+
+    <!-- Clean Two-Column Structural Details Grid -->
+    <main class="product-body">
+      <div class="details-grid">
+        <div class="info-panel">
+          <h2>Turn Your Dream of Owning a Home Into Reality</h2>
+          <p style="margin-bottom: 1.25rem; line-height: 1.6;">
+            At Capital Growth Advisory, we help individuals and families turn their dream of owning a home into reality with reliable and hassle-free Home Loan solutions. With our strong banking expertise and professional guidance, we assist clients in securing the right home loan options with competitive interest rates and smooth processing.
+          </p>
+          <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+            Whether you are purchasing a new home, resale property, under-construction property, plot purchase, home construction, or balance transfer, our team provides complete support throughout the loan journey. We understand that buying a home is one of the most important financial decisions in life. That is why we focus on offering personalized solutions based on your income profile, eligibility, and financial goals.
+          </p>
+
+          <h3 style="margin-top: 35px; color: #0f2c59;">Our Home Loan Services Include</h3>
+          <ul class="features-list">
+            <li><strong>New Home Purchase Loan:</strong> Perfect for financing brand new residential properties and ready-to-move-in flats.</li>
+            <li><strong>Balance Transfer Facility:</strong> Shift your existing higher-interest home loan to competitive, lower-rate bank ecosystems.</li>
+            <li><strong>Home Construction Loan:</strong> Capital allocations structured specifically to fund the step-by-step building of your house.</li>
+            <li><strong>Plot + Construction Loan:</strong> Combined financial assistance to purchase land and manage immediate architectural construction.</li>
+            <li><strong>Loan Against Property Guidance:</strong> Expert advisory to unlock hidden equity from existing assets for your capital requirements.</li>
+            <li><strong>Self-Employed & Salaried Profile Assistance:</strong> Custom-tailored files matching specialized underwriting criteria for both jobs and independent businesses.</li>
+            <li><strong>Documentation & Eligibility Support:</strong> Step-by-step processing help to map your financial profile out securely.</li>
+            <li><strong>Smooth Coordination with Banks & Financial Institutions:</strong> Utilizing our strong networks to accelerate verification loops and sanction tasks.</li>
+          </ul>
+
+          <h3 style="margin-top: 35px; color: #0f2c59;">Why Choose Us</h3>
+          <!-- Core Value Cards Core Grid Layout -->
+          <div class="feature-cards-grid">
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Professional Expertise</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Deep banking industry knowledge ensures your file matches underwriting standards perfectly.</p>
+            </div>
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Quick & Transparent</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Rapid turnarounds and honest disclosure covering every stage of processing limits.</p>
+            </div>
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Competitive Rates</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Access optimized interest options designed to minimize your long-term financial premium.</p>
+            </div>
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Personalized Guidance</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Custom solutions mapped around your current income profile and lifestyle targets.</p>
+            </div>
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Minimal Paperwork</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">Simplified verification setups to insulate you from endless administrative friction.</p>
+            </div>
+            <div class="feature-card">
+              <h3 style="color: #0f2c59; margin-bottom: 0.5rem; font-size: 1.15rem;">Trusted & Focused</h3>
+              <p style="font-size: 0.95rem; line-height: 1.5; color: #4a5568;">A completely customer-centric advisory model that prioritizes your family's financial health.</p>
+            </div>
+          </div>
+
+          <p style="line-height: 1.6; margin-top: 30px;">
+            At Capital Growth Advisory, our goal is to simplify the home loan process and help you achieve your dream home with confidence and ease.
+          </p>
+        </div>
+        
+        <div class="cta-sidebar" style="background: #f4f6f9; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; height: fit-content;">
+          <h3 style="color: #0f2c59; margin-bottom: 10px;">Claim Your Key</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 20px; line-height: 1.5;">For more details and customized Home Loan solutions, please connect with Capital Growth Advisory. We are committed to guiding you at every step of your home ownership journey.</p>
+          <!-- Updated anchor link to the homepage contact form -->
+          <a href="../index.html#contact" class="btn" style="display: block; text-align: center; text-decoration: none; background: #1a73e8; color: white; padding: 12px; border-radius: 4px; font-weight: 600;">Apply for a Home Loan</a>
+        </div>
+      </div>
+    </main>
+
+    <a href="https://wa.me/8655884973?text=Hi!%20I%20need%20some%20assistance%20regarding%20a%20loan." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+      <svg style="width: 32px; height: 32px; fill: currentColor" viewBox="0 0 24 24">
+        <path d="M12.004 2c-5.51 0-9.99 4.49-9.99 10 0 1.77.47 3.49 1.35 5.02L2 22l5.13-1.34c1.47.8 3.12 1.22 4.83 1.22 5.52 0 10-4.49 10-10 0-5.51-4.48-10-10-10zm5.83 14.25c-.24.67-1.39 1.28-1.9 1.31-.51.03-1 .18-3.2-.73-2.64-1.09-4.34-3.79-4.47-3.97-.13-.18-1.07-1.42-1.07-2.71 0-1.29.67-1.92.91-2.18.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.37-.06.57.43.21.51.73 1.79.79 1.91.06.12.1.27.02.43-.08.16-.12.26-.25.41-.12.15-.26.33-.37.45-.12.13-.25.27-.11.51.14.24.63 1.03 1.35 1.67.93.82 1.71 1.08 1.95 1.19.24.11.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.07.12.07.69-.17 1.36z" />
+      </svg>
+    </a>
+
+    <footer>
+      <p>© 2026 Capital Growth Advisory. All rights reserved.</p>
+    </footer>
+
+    <!-- Updated path to root JavaScript folder -->
+    <script src="../script/script.js"></script>
+  </body>
+</html>
