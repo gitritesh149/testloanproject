@@ -1,339 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capital Growth Advisory</title>
-    <link rel="icon" type="image/jpeg" href="./images/cga1.jpg" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      /* Layout alignment and restored scaling for the header brand area */
-      .nav-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px; /* Generous vertical padding to prevent squeezing */
-      }
 
-      .logo-wrap {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        text-decoration: none;
-      }
-      
-      .header-logo-icon {
-        width: 60px;  /* Restored to a prominent, larger height profile */
-        height: 60px; /* Restored to a prominent, larger height profile */
-        object-fit: contain;
-        border-radius: 50%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital Growth Advisory</title>
+  <link rel="icon" type="image/jpeg" href="./images/cga.jpg" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    /* Layout alignment and restored scaling for the header brand area */
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      /* Generous vertical padding to prevent squeezing */
+    }
 
-      .logo-text-group {
-        display: flex;
-        flex-direction: column;
-      }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
 
-      .logo-text {
-        font-size: 1.4rem; /* Slightly scaled up to balance the larger logo emblem */
-        font-weight: 700;
-        color: #0f2c59; /* Corporate deep blue tone */
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        line-height: 1.1;
-      }
+    .header-logo-icon {
+      width: 80px;
+      /* Restored to a prominent, larger height profile */
+      height: 80px;
+      /* Restored to a prominent, larger height profile */
+      object-fit: contain;
+      border-radius: 50%;
+    }
 
-      .logo-subtext {
-        font-size: 0.75rem; /* Proportionally optimized for readability */
-        color: #0f2c59; /* Vibrant brand blue color */
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.4px;
-        margin-top: 3px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav class="nav-container">
-        <a href="index.html" class="logo-wrap">
-          <img src="./images/cga1.jpg" alt="Capital Growth Advisory Logo" class="header-logo-icon" />
-          <div class="logo-text-group">
-            <span class="logo-text">Capital Growth Advisory</span>
-            <span class="logo-subtext">Your Financial Prosperity Is Our Priority</span>
-          </div>
-        </a>
-        
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text {
+      font-size: 1.4rem;
+      /* Slightly scaled up to balance the larger logo emblem */
+      font-weight: 700;
+      color: #0f2c59;
+      /* Corporate deep blue tone */
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+
+    .logo-subtext {
+      font-size: 0.75rem;
+      /* Proportionally optimized for readability */
+      color: #1a73e8;
+      /* Vibrant brand blue color */
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-container">
+      <a href="index.html" class="logo-wrap">
+        <img src="./images/cga.jpg" alt="Capital Growth Advisory Logo" class="header-logo-icon" />
+        <div class="logo-text-group">
+          <span class="logo-text">Capital Growth Advisory</span>
+          <span class="logo-subtext">"Your Financial Prosperity Is Our Priority"</span>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About Us</a></li>
-          <li class="dropdown" id="offerings-dropdown">
-            <a href="#" class="dropdown-trigger">Loan Offerings ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="offerings/unsecured-business-loan.html">Unsecured Business Loan</a></li>
-              <li><a href="offerings/working-capital.html">Working Capital- OD /CC</a></li>
-              <li><a href="offerings/home-loan.html">Home Loan</a></li>
-              <li><a href="offerings/loan-against-property.html">Loan Against Property</a></li>
-              <li><a href="offerings/car-loan.html">Car loan</a></li>
-              <li><a href="offerings/personal-loan.html">Personal loan</a></li>
-              <li><a href="offerings/education-loan.html">Education loan</a></li>
-              <li><a href="offerings/bill-discounting.html">Bill discounting</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html#contact">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+      </a>
 
-    <section class="hero">
-      <div class="hero-carousel">
-        <div class="carousel-slide slide-bg-1 active">
-          <div class="hero-content">
-            <h1>Fast Funding. Smart Solutions. Stronger Growth!</h1>
-            <p>
-              Get quick approvals, transparent processes, and customized loan
-              solutions tailored to meet your unique enterprise targets.
-            </p>
-            <a href="#contact" class="btn">Get Started Today</a>
-          </div>
-        </div>
-
-        <div class="carousel-slide slide-bg-2">
-          <div class="hero-content">
-            <h1>Empowering Enterprises with Capital Flexibility</h1>
-            <p>
-              From unsecured business loans to strategic asset refinancing, we
-              balance transactional turnaround with zero hidden terms.
-            </p>
-            <a href="#offerings" class="btn">Explore Loan Offerings</a>
-          </div>
-        </div>
-
-        <div class="carousel-slide slide-bg-3">
-          <div class="hero-content">
-            <h1>Strategic Advice Meets Structured Disbursals</h1>
-            <p>
-              Connect with industry-tested consultants to clean your cash cycles
-              instantly via strategic Bill Discounting channels.
-            </p>
-            <a href="#contact" class="btn">Request Call Back</a>
-          </div>
-        </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </section>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li class="dropdown" id="offerings-dropdown">
+          <a href="index.html#offerings" class="dropdown-trigger">Loan Offerings ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="offerings/unsecured-business-loan.html">Unsecured Business Loan</a></li>
+            <li><a href="offerings/working-capital.html">Working Capital- OD /CC</a></li>
+            <li><a href="offerings/home-loan.html">Home Loan</a></li>
+            <li><a href="offerings/loan-against-property.html">Loan Against Property</a></li>
+            <li><a href="offerings/car-loan.html">Car loan</a></li>
+            <li><a href="offerings/personal-loan.html">Personal loan</a></li>
+            <li><a href="offerings/education-loan.html">Education loan</a></li>
+            <li><a href="offerings/bill-discounting.html">Bill discounting</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="about" id="about" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;scroll-margin-top: 90px;">
-      <h2 class="section-title">About Us</h2>
-    
-      <!-- <section class="about-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;"> -->
-      <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: start;">
-    
-        <div class="about-narrative">
-          <span
-            style="color: #1a73e8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Who
-            We Are</span>
-          <h2
-            style="color: #0f2c59; font-size: 2.2rem; margin-top: 10px; margin-bottom: 20px; font-weight: 700; line-height: 1.2;">
-            Empowering India's MSME Ecosystem Through Institutional Expertise
-          </h2>
-          <p style="color: #4a5568; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
-            Founded in August 2024 by veteran corporate banking specialists, <strong>Capital Growth Advisory</strong>
-            bridges the critical operational gap between expanding businesses and institutional credit frameworks.
+  <section class="hero">
+    <div class="hero-carousel">
+      <div class="carousel-slide slide-bg-1 active">
+        <div class="hero-content">
+          <h1>Fast Funding. Smart Solutions. Stronger Growth!</h1>
+          <p>
+            Get quick approvals, transparent processes, and customized loan
+            solutions tailored to meet your unique enterprise targets.
           </p>
-          <p style="color: #4a5568; line-height: 1.7; font-size: 1.05rem;">
-            Backed by deep technical experience within leading global multi-national banks, we demystify commercial capital
-            extraction to let entrepreneurs focus entirely on scalable expansion.
+          <a href="#contact" class="btn">Get Started Today</a>
+        </div>
+      </div>
+
+      <div class="carousel-slide slide-bg-2">
+        <div class="hero-content">
+          <h1>Empowering Enterprises with Capital Flexibility</h1>
+          <p>
+            From unsecured business loans to strategic asset refinancing, we
+            balance transactional turnaround with zero hidden terms.
           </p>
-        </div>
-    
-        <div class="pillars-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-    
-          <div class="pillar-card"
-            style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #1a73e8; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
-            <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Banking Heritage</h3>
-            <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">Our legacy in top-tier MNC banks
-              guarantees sophisticated risk mitigation and polished financial navigation.</p>
-          </div>
-    
-          <div class="pillar-card"
-            style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #0f2c59; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
-            <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">MSME Advocacy</h3>
-            <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">We engineer custom debt capabilities
-              explicitly optimized for manufacturers, traders, and fast-growth startups.</p>
-          </div>
-    
-          <div class="pillar-card"
-            style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #0f2c59; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
-            <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Absolute Integrity</h3>
-            <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">Zero hidden processing friction.
-              Complete operational clarity across every documentation and legal evaluation sweep.</p>
-          </div>
-    
-          <div class="pillar-card"
-            style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #1a73e8; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
-            <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Strategic Advisory</h3>
-            <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">We do not process simple one-off
-              transactions; we engineer secure corporate capital runways for long-term growth.</p>
-          </div>
-    
+          <a href="#offerings" class="btn">Explore Loan Offerings</a>
         </div>
       </div>
-      <!-- </section> -->
-    
-    
-    </section>
-    <style>
-      @media (max-width: 968px) {
-        .about-grid {
-          grid-template-columns: 1fr !important;
-          gap: 30px !important;
-        }
+
+      <div class="carousel-slide slide-bg-3">
+        <div class="hero-content">
+          <h1>Strategic Advice Meets Structured Disbursals</h1>
+          <p>
+            Connect with industry-tested consultants to clean your cash cycles
+            instantly via strategic Bill Discounting channels.
+          </p>
+          <a href="#contact" class="btn">Request Call Back</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about"
+    style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;scroll-margin-top: 90px;">
+    <h2 class="section-title">About Us</h2>
+
+    <!-- <section class="about-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;"> -->
+    <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: start;">
+
+      <div class="about-narrative">
+        <span
+          style="color: #1a73e8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Who
+          We Are</span>
+        <h2
+          style="color: #0f2c59; font-size: 2.2rem; margin-top: 10px; margin-bottom: 20px; font-weight: 700; line-height: 1.2;">
+          Empowering India's MSME Ecosystem Through Institutional Expertise
+        </h2>
+        <p style="color: #4a5568; line-height: 1.7; font-size: 1.1rem; margin-bottom: 1.5rem;">
+          Founded in August 2024 by veteran corporate banking specialists, <strong>Capital Growth Advisory</strong>
+          bridges the critical operational gap between expanding businesses and institutional credit frameworks.
+        </p>
+        <p style="color: #4a5568; line-height: 1.7; font-size: 1.05rem;">
+          Backed by deep technical experience within leading global multi-national banks, we demystify commercial
+          capital
+          extraction to let entrepreneurs focus entirely on scalable expansion.
+        </p>
+      </div>
+
+      <div class="pillars-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+        <div class="pillar-card"
+          style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #1a73e8; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+          <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Banking Heritage</h3>
+          <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">Our legacy in top-tier MNC banks
+            guarantees sophisticated risk mitigation and polished financial navigation.</p>
+        </div>
+
+        <div class="pillar-card"
+          style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #0f2c59; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+          <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">MSME Advocacy</h3>
+          <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">We engineer custom debt
+            capabilities
+            explicitly optimized for manufacturers, traders, and fast-growth startups.</p>
+        </div>
+
+        <div class="pillar-card"
+          style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #0f2c59; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+          <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Absolute Integrity</h3>
+          <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">Zero hidden processing friction.
+            Complete operational clarity across every documentation and legal evaluation sweep.</p>
+        </div>
+
+        <div class="pillar-card"
+          style="background: #f8fafc; padding: 25px; border-radius: 6px; border-left: 4px solid #1a73e8; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);">
+          <h3 style="color: #0f2c59; font-size: 1.2rem; margin-bottom: 10px;">Strategic Advisory</h3>
+          <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin: 0;">We do not process simple one-off
+            transactions; we engineer secure corporate capital runways for long-term growth.</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- </section> -->
+
+
+  </section>
+  <style>
+    @media (max-width: 968px) {
+      .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
       }
-    
-      @media (max-width: 480px) {
-        .pillars-grid {
-          grid-template-columns: 1fr !important;
-        }
+    }
+
+    @media (max-width: 480px) {
+      .pillars-grid {
+        grid-template-columns: 1fr !important;
       }
-    </style>
+    }
+  </style>
 
-    <section class="offerings" id="offerings">
-      <h2 class="section-title">Our Loan Offerings</h2>
-      <p class="section-subtitle">
-        Comprehensive financial products customized for your immediate commercial or structural needs.
-      </p>
+  <section class="offerings" id="offerings" style="scroll-margin-top: 90px;">
+    <div class="offerings-header">
+    <h2 class="section-title">Our Loan Offerings</h2>
+    <p class="section-subtitle">
+      Comprehensive financial products customized for your immediate commercial or structural needs.
+    </p>
+  </div>
 
-      <div class="offerings-grid">
-        <div class="offering-card">
-          <h3><span>💼</span> Unsecured Business Loan</h3>
-          <p>Unlock structured liquidity options to scale business operations, upgrade fixed equipment assets, or safely balance short-term working capital demands.</p>
-          <a href="offerings/unsecured-business-loan.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
+    <div class="offerings-grid">
+      <div class="offering-card">
+        <h3><span>💼</span> Unsecured Business Loan</h3>
+        <p>Unlock structured liquidity options to scale business operations, upgrade fixed equipment assets, or safely
+          balance short-term working capital demands.</p>
+        <a href="offerings/unsecured-business-loan.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>📈</span> Working Capital- OD /CC</h3>
+        <p>Manage daily business operational expenses cleanly with flexible Overdraft and Cash Credit channels optimized
+          for cash cycles.</p>
+        <a href="offerings/working-capital.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>🏠</span> Home Loan</h3>
+        <p>Secure residential purchases through low-interest baseline financing options built on flexible multi-year
+          horizons.</p>
+        <a href="offerings/home-loan.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>🏢</span> Loan Against Property</h3>
+        <p>Maximize the liquid value of your commercial or residential land portfolios via fast, non-restrictive
+          terminal equity loans.</p>
+        <a href="offerings/loan-against-property.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>🚗</span> Car loan</h3>
+        <p>Get competitive interest rates and high loan-to-value allocations for both new asset purchases and pre-owned
+          vehicle acquisitions.</p>
+        <a href="offerings/car-loan.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>👤</span> Personal loan</h3>
+        <p>Fast emergency capitalization frameworks for medical mandates, educational adjustments, or key transactional
+          requirements.</p>
+        <a href="offerings/personal-loan.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>🎓</span> Education loan</h3>
+        <p>Comprehensive institutional funding structures supporting advanced studies at top premium domestic and
+          overseas universities.</p>
+        <a href="offerings/education-loan.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+      <div class="offering-card">
+        <h3><span>📄</span> Bill discounting</h3>
+        <p>Accelerate your cash cycles immediately by converting uncleared corporate accounts receivables into working
+          liquidity.</p>
+        <a href="offerings/bill-discounting.html" class="btn-link"
+          style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn
+          More →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" style="scroll-margin-top: 90px;">
+    <h2 class="section-title">Connect with Us</h2>
+    <p class="section-subtitle">Drop us a line or visit our processing office for a direct strategy assessment.</p>
+
+    <div class="contact-layout">
+      <div class="contact-info-panel">
+        <div class="address-card">
+          <h3>Corporate Office</h3>
+          <p>
+            <strong>Capital Growth Advisory</strong><br />
+            Office no 206, 2nd floor-B Wing, Gopal Bhuvan,<br />
+            Above Pallavi Veg Restaurant,<br />
+            Andheri East, Mumbai -400069, MH, India
+          </p>
+          <a href="https://www.google.com/maps/place/Gopal+Bhavan/@19.1191539,72.8513138,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c9d2cd90631b:0x6cac3ab6ab34b08c!8m2!3d19.1191539!4d72.8513138!16s%2Fg%2F11c1nfm4bb"
+            class="btn-outline" target="_blank" style="margin-top: 15px; display: inline-block;">View on Google Maps</a>
+          <p style="margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 15px; line-height: 1.6;">
+            <strong>📞 Call Us:</strong> <br />
+            <a href="tel:+918655884970" style="color: #1a73e8; text-decoration: none; font-weight: 600;">+91 86558
+              84970</a> /
+            <a href="tel:+918655884971" style="color: #1a73e8; text-decoration: none; font-weight: 600;">71</a> /
+            <a href="tel:+918655884972" style="color: #1a73e8; text-decoration: none; font-weight: 600;">72</a> /
+            <a href="tel:+918655884973" style="color: #1a73e8; text-decoration: none; font-weight: 600;">73</a>
+            <br />
+            <span style="display: block; margin-top: 8px;"></span>
+            <strong>✉️ Email Us:</strong> <br />
+            <a href="mailto:capitalgrowthadvisory@outlook.com"
+              style="color: #1a73e8; text-decoration: none; font-weight: 600; word-break: break-all;">capitalgrowthadvisory@outlook.com</a>
+          </p>
+
+
         </div>
-        <div class="offering-card">
-          <h3><span>📈</span> Working Capital- OD /CC</h3>
-          <p>Manage daily business operational expenses cleanly with flexible Overdraft and Cash Credit channels optimized for cash cycles.</p>
-          <a href="offerings/working-capital.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>🏠</span> Home Loan</h3>
-          <p>Secure residential purchases through low-interest baseline financing options built on flexible multi-year horizons.</p>
-          <a href="offerings/home-loan.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>🏢</span> Loan Against Property</h3>
-          <p>Maximize the liquid value of your commercial or residential land portfolios via fast, non-restrictive terminal equity loans.</p>
-          <a href="offerings/loan-against-property.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>🚗</span> Car loan</h3>
-          <p>Get competitive interest rates and high loan-to-value allocations for both new asset purchases and pre-owned vehicle acquisitions.</p>
-          <a href="offerings/car-loan.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>👤</span> Personal loan</h3>
-          <p>Fast emergency capitalization frameworks for medical mandates, educational adjustments, or key transactional requirements.</p>
-          <a href="offerings/personal-loan.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>🎓</span> Education loan</h3>
-          <p>Comprehensive institutional funding structures supporting advanced studies at top premium domestic and overseas universities.</p>
-          <a href="offerings/education-loan.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
-        </div>
-        <div class="offering-card">
-          <h3><span>📄</span> Bill discounting</h3>
-          <p>Accelerate your cash cycles immediately by converting uncleared corporate accounts receivables into working liquidity.</p>
-          <a href="offerings/bill-discounting.html" class="btn-link" style="display:inline-block; margin-top:1rem; color:var(--primary-color); text-decoration:none; font-weight:600;">Learn More →</a>
+
+        <div class="map-iframe-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.789178970894!2d72.84912517597148!3d19.11915385008544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d2cd90631b%3A0x6cac3ab6ab34b08c!2sGopal%20Bhavan!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
-    </section>
 
-    <section class="contact" id="contact">
-      <h2 class="section-title">Connect with Us</h2>
-      <p class="section-subtitle">Drop us a line or visit our processing office for a direct strategy assessment.</p>
+      <div class="contact-form-container">
+        <form id="loanContactForm">
+          <input type="hidden" name="access_key" value="cafeddf2-0494-4809-8b03-72733b8b53a7" />
+          <input type="hidden" name="subject" value="New Loan Lead from Capital Growth Advisory" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
 
-      <div class="contact-layout">
-        <div class="contact-info-panel">
-          <div class="address-card">
-            <h3>Corporate Office</h3>
-            <p>
-              <strong>Capital Growth Advisory</strong><br />
-              Office no 206, 2nd floor-B Wing, Gopal Bhuvan,<br />
-              Above Pallavi Veg Restaurant,<br />
-              Andheri East, Mumbai -400069, MH, India
-              <!-- Gopal Bhavan, Azad Nagar,<br />
-              Andheri East, Mumbai - 400069, MH, India -->
-            </p>
-            <a href="https://www.google.com/maps/place/Gopal+Bhavan/@19.1191539,72.8513138,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c9d2cd90631b:0x6cac3ab6ab34b08c!8m2!3d19.1191539!4d72.8513138!16s%2Fg%2F11c1nfm4bb" class="btn-outline" target="_blank">View on Google Maps</a>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe" />
           </div>
 
-          <div class="map-iframe-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.789178970894!2d72.84912517597148!3d19.11915385008544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d2cd90631b%3A0x6cac3ab6ab34b08c!2sGopal%20Bhavan!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" loading="lazy" allowfullscreen></iframe>
+          <div class="form-group">
+            <label filter="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com" />
           </div>
-        </div>
 
-        <div class="contact-form-container">
-          <form id="loanContactForm">
-            <input type="hidden" name="access_key" value="cafeddf2-0494-4809-8b03-72733b8b53a7" />
-            <input type="hidden" name="subject" value="New Loan Lead from Capital Growth Advisory" />
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+          <div class="form-group">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}"
+              maxlength="10" title="Please enter a 10-digit mobile number" />
+          </div>
 
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe" />
-            </div>
+          <div class="form-group">
+            <label for="loan-type">Loan Type Needed</label>
+            <select id="loan-type" name="loan_type" class="form-control" required>
+              <option value="">Select an offering...</option>
+              <option value="Unsecured Business Loan">Unsecured Business Loan</option>
+              <option value="Working Capital- OD /CC">Working Capital- OD /CC</option>
+              <option value="Home Loan">Home Loan</option>
+              <option value="Loan Against Property">Loan Against Property</option>
+              <option value="Car Loan">Car Loan</option>
+              <option value="Personal Loan">Personal Loan</option>
+              <option value="Education Loan">Education Loan</option>
+              <option value="Bill Discounting">Bill Discounting</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-              <label filter="email">Email Address</label>
-              <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com" />
-            </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required
+              placeholder="Tell us briefly about your borrowing requirement..."></textarea>
+          </div>
 
-            <div class="form-group">
-              <label for="phone">Mobile Number</label>
-              <input type="tel" id="phone" name="phone" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" maxlength="10" title="Please enter a 10-digit mobile number" />
-            </div>
-
-            <div class="form-group">
-              <label for="loan-type">Loan Type Needed</label>
-              <select id="loan-type" name="loan_type" class="form-control" required>
-                <option value="">Select an offering...</option>
-                <option value="Unsecured Business Loan">Unsecured Business Loan</option>
-                <option value="Working Capital- OD /CC">Working Capital- OD /CC</option>
-                <option value="Home Loan">Home Loan</option>
-                <option value="Loan Against Property">Loan Against Property</option>
-                <option value="Car Loan">Car Loan</option>
-                <option value="Personal Loan">Personal Loan</option>
-                <option value="Education Loan">Education Loan</option>
-                <option value="Bill Discounting">Bill Discounting</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Tell us briefly about your borrowing requirement..."></textarea>
-            </div>
-
-            <button type="submit" id="submitBtn">Submit Request</button>
-            <div id="formResponse" style="margin-top: 1rem; font-weight: 600; text-align: center;"></div>
-          </form>
-        </div>
+          <button type="submit" id="submitBtn">Submit Request</button>
+          <div id="formResponse" style="margin-top: 1rem; font-weight: 600; text-align: center;"></div>
+        </form>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <a href="https://wa.me/8655884973?text=Hi!%20I%20need%20some%20assistance%20regarding%20a%20loan." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-      <svg style="width: 32px; height: 32px; fill: currentColor" viewBox="0 0 24 24">
-        <path d="M12.004 2c-5.51 0-9.99 4.49-9.99 10 0 1.77.47 3.49 1.35 5.02L2 22l5.13-1.34c1.47.8 3.12 1.22 4.83 1.22 5.52 0 10-4.49 10-10 0-5.51-4.48-10-10-10zm5.83 14.25c-.24.67-1.39 1.28-1.9 1.31-.51.03-1 .18-3.2-.73-2.64-1.09-4.34-3.79-4.47-3.97-.13-.18-1.07-1.42-1.07-2.71 0-1.29.67-1.92.91-2.18.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.37-.06.57.43.21.51.73 1.79.79 1.91.06.12.1.27.02.43-.08.16-.12.26-.25.41-.12.15-.26.33-.37.45-.12.13-.25.27-.11.51.14.24.63 1.03 1.35 1.67.93.82 1.71 1.08 1.95 1.19.24.11.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.07.12.07.69-.17 1.36z" />
-      </svg>
-    </a>
+  <a href="https://wa.me/8655884973?text=Hi!%20I%20need%20some%20assistance%20regarding%20a%20loan."
+    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg style="width: 32px; height: 32px; fill: currentColor" viewBox="0 0 24 24">
+      <path
+        d="M12.004 2c-5.51 0-9.99 4.49-9.99 10 0 1.77.47 3.49 1.35 5.02L2 22l5.13-1.34c1.47.8 3.12 1.22 4.83 1.22 5.52 0 10-4.49 10-10 0-5.51-4.48-10-10-10zm5.83 14.25c-.24.67-1.39 1.28-1.9 1.31-.51.03-1 .18-3.2-.73-2.64-1.09-4.34-3.79-4.47-3.97-.13-.18-1.07-1.42-1.07-2.71 0-1.29.67-1.92.91-2.18.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.37-.06.57.43.21.51.73 1.79.79 1.91.06.12.1.27.02.43-.08.16-.12.26-.25.41-.12.15-.26.33-.37.45-.12.13-.25.27-.11.51.14.24.63 1.03 1.35 1.67.93.82 1.71 1.08 1.95 1.19.24.11.38.1.52-.06.14-.17.62-.72.79-.97.17-.25.34-.21.57-.12.24.09 1.5.71 1.76.84.26.13.43.19.49.3.07.12.07.69-.17 1.36z" />
+    </svg>
+  </a>
 
-    <footer>
-      <p>© 2026 Capital Growth Advisory. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>© 2026 Capital Growth Advisory. All rights reserved.</p>
+  </footer>
 
-    <script src="./script/script.js"></script>
-  </body>
+  <script src="./script/script.js"></script>
+</body>
+
 </html>

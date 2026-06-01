@@ -553,3 +553,114 @@ footer {
     .logo-text { font-size: 1.15rem; }
     .header-logo-icon { width: 48px; height: 48px; }
 }
+
+/* --- Offerings Section Layout Structure --- */
+.offerings {
+  padding: 50px 20px; /* Reduced vertical padding */
+  background-color: #f4f7fa; /* Faint gray-blue background to pop cards */
+  scroll-margin-top: 90px;
+}
+
+/* New Title Layout Container to control vertical distribution */
+.offerings-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto; /* Tightened gap below the subtitle to 30px */
+}
+
+/* Explicit typography cleanups */
+.offerings .section-title {
+  color: #0f2c59; /* Authoritative Deep Blue */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0; /* Tightened gap directly under the main title */
+}
+
+/* --- Base Styling (Applies to all devices, optimized for mobile first) --- */
+.offerings .section-subtitle {
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 0 20px; /* Prevents text from hitting screen edges on mobile */
+}
+
+/* --- Desktop Mode Mode Enhancements (Screens 768px wide or larger) --- */
+@media (min-width: 768px) {
+  .offerings .section-subtitle {
+    white-space: nowrap; /* Forces the entire sentence to sit on a single line */
+    max-width: none;     /* Removes the width bottleneck constraint */
+    padding: 0;          /* Clears desktop padding */
+  }
+}
+
+/* Grid layout with constrained widths */
+.offerings-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* --- Premium Light-Themed Card Designs --- */
+.offering-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(15, 44, 89, 0.02);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+.offering-card:hover {
+  transform: translateY(-5px);
+  border-color: #1a73e8; /* Changes to clear brand blue on hover */
+  box-shadow: 0 12px 24px rgba(15, 44, 89, 0.08);
+}
+
+.offering-card h3 {
+  color: #0f2c59;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 12px 0; /* Unified title baselines */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.3;
+}
+
+.offering-card h3 span {
+  font-size: 1.4rem;
+  background: rgba(26, 115, 232, 0.08);
+  padding: 6px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offering-card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  flex-grow: 1; /* Force drops the Learn More buttons to a clean horizon level */
+}
+
+.offering-card .btn-link {
+  font-size: 0.95rem;
+  transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.offering-card:hover .btn-link {
+  color: #0f2c59 !important;
+  transform: translateX(4px);
+}
+
